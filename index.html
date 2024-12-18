@@ -114,6 +114,7 @@
 /* change user response bubbles to make sure they fit in storyline */
 .user-reponse-wrapper {
   height: var(--user-response-panel-height);
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
@@ -143,6 +144,10 @@
 
 /* Navbar */
 .navbar {
+  visibility: hidden;
+}
+
+.nav.navbar.navbar-expand-lg.fixed-top nav-link-undo.content-container {
   visibility: hidden;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-Ammar" color="green"></tw-tag><tw-tag name="speaker-You" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="575,400" size="100,100">Ammar has connected to the chat. 
 
@@ -174,19 +179,14 @@
 
 </tw-passagedata><tw-passagedata pid="9" name="EmpathyFeedback" tags="" position="700,625" size="100,100">Careful. When trying to be empathetic, we want to ensure that our responses are useful and targeted at the client&#39;s immediate problem. 
 
-&lt;% story.showDelayed(&quot;Over-explaining2&quot;); %&gt;
+&lt;% story.showDelayed(&quot;EmpathyReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="10" name="EmpathyReaction" tags="speaker-Ammar" position="700,725" size="100,100">What is this, a therapy session?
 
-[[EmpathyReaction]]</tw-passagedata><tw-passagedata pid="10" name="EmpathyReaction" tags="speaker-Ammar" position="700,725" size="100,100">What is this, a therapy session?
+&lt;% story.showDelayed(&quot;EmpathyReaction2&quot;); %&gt;
+</tw-passagedata><tw-passagedata pid="11" name="Name" tags="speaker-Ammar" position="1025,925" size="100,100">It&#39;s Ammar Malik.
 
-&lt;% story.showDelayed(&quot;Over-explaining3&quot;); %&gt;
+&lt;% story.showDelayed(&quot;Step 1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="12" name="Number" tags="speaker-Ammar" position="1150,925" size="100,100">My number is 000-123-4567.
 
-[[EmpathyReaction2]]
-
-</tw-passagedata><tw-passagedata pid="11" name="Name" tags="speaker-Ammar" position="1025,925" size="100,100">It&#39;s Ammar Marikar.
-
-&lt;% story.showDelayed(&quot;Get shipping information&quot;); %&gt;</tw-passagedata><tw-passagedata pid="12" name="Number" tags="speaker-Ammar" position="1150,925" size="100,100">My number is 000-123-4567.
-
-&lt;% story.showDelayed(&quot;Get shipping information&quot;); %&gt;</tw-passagedata><tw-passagedata pid="13" name="Tracking" tags="speaker-Ammar" position="875,925" size="100,100">It&#39;s mara83o21.
+&lt;% story.showDelayed(&quot;Step 1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="13" name="Tracking" tags="speaker-Ammar" position="875,925" size="100,100">It&#39;s mara83o21.
 
 [[It seems that the code is invalid.|InvalidCode]]</tw-passagedata><tw-passagedata pid="14" name="GreetFeedback" tags="" position="825,525" size="100,100">Careful. When a customer immediately explains their issue or appears agitated, it is best to validate their feelings, offer support, and emphasize urgency. 
 
@@ -195,9 +195,7 @@
 [[I completely understand, Ammar. You&#39;ve been waiting so long to get your issue resolved, so let&#39;s take a look at your file right away.|Step 1]]
 [[I know it&#39;s been a long day, but I promise you we can resolve this issue shortly.|Step 1]]</tw-passagedata><tw-passagedata pid="16" name="ExcusesFeedback" tags="" position="1200,525" size="100,100">Careful. When responding to the client, we want to redirect them towards a solution, rather than highlighting the difficulties they have had so far. 
 
-&lt;% story.showDelayed(&quot;ExcusesReaction&quot;); %&gt;
-
-[[ExcusesReaction]]</tw-passagedata><tw-passagedata pid="17" name="ExcusesReaction" tags="speaker-Ammar" position="1200,625" size="100,100">It&#39;s not my fault that you&#39;re completely unprepared. Don&#39;t you guys have systems to deal with the peak call hours? It&#39;s literally the holiday season. 
+&lt;% story.showDelayed(&quot;ExcusesReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="17" name="ExcusesReaction" tags="speaker-Ammar" position="1200,625" size="100,100">It&#39;s not my fault that you&#39;re completely unprepared. Don&#39;t you guys have systems to deal with the peak call hours? It&#39;s literally the holiday season. 
 
 [[To speed up the resolution to your problem, let&#39;s open up your file.|Step 1]]</tw-passagedata><tw-passagedata pid="18" name="Step 2" tags="" position="1300,800" size="100,100">[[The delivery details indicate that the item was delivered one week late.|DeliveryDetails]]
 [[You mentioned that your package was delivered late and damaged. Can you give me more information?|DeliveryQuestions]]
@@ -208,9 +206,7 @@
 
 [[Perfect, thank you. |Step 1]]</tw-passagedata><tw-passagedata pid="21" name="CodeFeedback" tags="" position="1000,1175" size="100,100">Careful. When guiding the client, you want to give them actionable steps that they can take to provide you with the correct information, such as confirming the number, or checking their email.
 
-&lt;% story.showDelayed(&quot;CodeFeedback2&quot;); %&gt;
-
-[[CodeFeedback2]]</tw-passagedata><tw-passagedata pid="22" name="NumberCode" tags="speaker-Ammar" position="750,1175" size="100,100">Oh sorry, I misread. Its mara83021. 
+&lt;% story.showDelayed(&quot;CodeFeedback2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="22" name="NumberCode" tags="speaker-Ammar" position="750,1175" size="100,100">Oh sorry, I misread. Its mara83021. 
 
 [[No problem.|Step 1]]</tw-passagedata><tw-passagedata pid="23" name="CodeFeedback2" tags="speaker-Ammar" position="1000,1275" size="100,100">Yeah, I know. I gave you the right code.
 
@@ -227,8 +223,9 @@
 
 </tw-passagedata><tw-passagedata pid="27" name="AddressFeedback" tags="" position="1300,1050" size="100,100">Careful. When there are multiple issues, you will need to assess which is of more importance. In this case, the client makes it clear that the delay in the delivery is of less importance than the damage sustained by the package.
 
-[[AddressFeedback2]]
-</tw-passagedata><tw-passagedata pid="28" name="AddressFeedback2" tags="speaker-Ammar" position="1300,1150" size="100,100">Right now I don&#39;t care about the late delivery, I care about the damage. </tw-passagedata><tw-passagedata pid="29" name="DeliveryQuestionsHub" tags="" position="1450,1050" size="100,100">[[Was the packaging tampered with or opened when you received it?|DeliveryQuestion1]]
+&lt;% story.showDelayed(&quot;AddressFeedback2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="28" name="AddressFeedback2" tags="speaker-Ammar" position="1300,1150" size="100,100">Right now I don&#39;t care about the late delivery, I care about the damage. 
+
+&lt;% story.showDelayed(&quot;DeliveryQuestionsHub&quot;); %&gt;</tw-passagedata><tw-passagedata pid="29" name="DeliveryQuestionsHub" tags="" position="1450,1050" size="100,100">[[Was the packaging tampered with or opened when you received it?|DeliveryQuestion1]]
 [[Do you have photos of the damage that you can provide?|DeliveryQuestion2]]
 [[When did you notice the damage?| DeliveryQuestion3]]
 [[I have the information I need to proceed|Step 3]]</tw-passagedata><tw-passagedata pid="30" name="DeliveryQuestion1" tags="speaker-Ammar" position="1425,1200" size="100,100">No, the package was sealed normally. There was no reason to believe it would be in the state that it is.
@@ -248,11 +245,9 @@
 
 </tw-passagedata><tw-passagedata pid="35" name="Address" tags="" position="1825,1300" size="100,100">Careful. The customer&#39;s complaint has nothing to do with an incorrect address.
 
-&lt;% story.showDelayed(&quot;AddressReaction&quot;); %&gt;
+&lt;% story.showDelayed(&quot;AddressReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="36" name="TransferFeedback" tags="" position="1825,1175" size="100,100">Careful. If a customer is able to provide proof of damage, and that the damage was sustained during shipment, then FedPak policy requires a refund without escalating to management.
 
-[[AddressReaction]]</tw-passagedata><tw-passagedata pid="36" name="TransferFeedback" tags="" position="1825,1175" size="100,100">Careful. If a customer is able to provide proof of damage, and that the damage was sustained during shipment, then FedPak policy requires a refund without escalating to management.
-
-&lt;% story.showDelayed(&quot;Transfer2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Great. Customers who can provide proof of damage should be refunded according to FedPak policy and standards. 
+&lt;% story.showDelayed(&quot;TransferReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Customers who can provide proof of damage should be refunded according to FedPak policy and standards. 
 
 &lt;% story.showDelayed(&quot;Close&quot;); %&gt;
 
@@ -260,9 +255,7 @@
 
 [[FedPak policy requires proof of damage, and that the damage was sustained during shipment. Do you have proof that you can share with me?|Transfer]]</tw-passagedata><tw-passagedata pid="39" name="Transfer" tags="speaker-Ammar" position="2050,1175" size="100,100">Yeah, I do. As you can see, it&#39;s still in the packaging.
 
-&lt;% story.showDelayed(&quot;Transfer2&quot;); %&gt;
-
-[[Transfer2]]</tw-passagedata><tw-passagedata pid="40" name="Transfer2" tags="speaker-Ammar" position="2150,1175" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
+&lt;% story.showDelayed(&quot;Transfer2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="40" name="Transfer2" tags="speaker-Ammar" position="2150,1175" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
 
 [[Thank you for sharing this. I will issue a refund for your delivery right away.|Refund]]</tw-passagedata><tw-passagedata pid="41" name="AddressReaction" tags="speaker-Ammar" position="1950,1300" size="100,100">This is such a waste of time. I HAVE A DAMAGED PACKAGE NOT AN INCORRECT ADDRESS. 
 

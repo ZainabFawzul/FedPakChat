@@ -167,7 +167,7 @@
 
 &lt;% story.showDelayed(&quot;A1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="2" name="A1" tags="speaker-Ammar" position="700,400" size="100,100">Hi.
 
-&lt;% story.showDelayed(&quot;A2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="3" name="A2" tags="speaker-Ammar" position="825,400" size="100,100">I&#39;ve been on hold for 2 hours this time and in the chat waiting room for 30 mins. I&#39;m sick of being bounced around.
+&lt;% story.showDelayed(&quot;A2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="3" name="A2" tags="speaker-Ammar" position="825,400" size="100,100">I&#39;ve been on hold for 2 hours today and in the chat waiting room for 30 mins. I&#39;m sick of being bounced around.
 
 &lt;% story.showDelayed(&quot;A3&quot;); %&gt;</tw-passagedata><tw-passagedata pid="4" name="A3" tags="speaker-Ammar" position="950,400" size="100,100">My package was supposed to be here weeks ago and now when it finally arrives it&#39;s in pieces. 
 
@@ -188,19 +188,22 @@
 [[I apologize for the inconvenience, Ammar. Unfortunately I can&#39;t access your records with us until I have your full name, number, and tracking number.|Step 1]]</tw-passagedata><tw-passagedata pid="8" name="Step 1" tags="" position="1000,800" size="100,100">[[May I please have your full name?|Name]]
 [[Can I get the number we have on file?|Number]]
 [[What is the tracking number of your item?|Tracking]]
-[[Thank you, I have all the information that I need to access your file.|Step 2]]
 
 
-</tw-passagedata><tw-passagedata pid="9" name="EmpathyFeedback" tags="" position="700,625" size="100,100">Careful. When trying to be empathetic, we want to ensure that our responses are useful and targeted at the client&#39;s immediate problem. 
+[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="9" name="EmpathyFeedback" tags="" position="700,625" size="100,100">Careful. When trying to be empathetic, we want to ensure that our responses are useful and targeted at the client&#39;s immediate problem. 
 
 &lt;% story.showDelayed(&quot;EmpathyReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="10" name="EmpathyReaction" tags="speaker-Ammar" position="700,725" size="100,100">What is this, a therapy session?
 
 &lt;% story.showDelayed(&quot;EmpathyReaction2&quot;); %&gt;
 </tw-passagedata><tw-passagedata pid="11" name="Name" tags="speaker-Ammar" position="1025,925" size="100,100">It&#39;s Ammar Malik.
 
-&lt;% story.showDelayed(&quot;Step 1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="12" name="Number" tags="speaker-Ammar" position="1150,925" size="100,100">My number is 000-123-4567.
+[[Can I get the number we have on file?|Number]]
+[[What is the tracking number of your item?|Tracking]]
+[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="12" name="Number" tags="speaker-Ammar" position="1150,925" size="100,100">My number is 000-123-4567.
 
-&lt;% story.showDelayed(&quot;Step 1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="13" name="Tracking" tags="speaker-Ammar" position="875,925" size="100,100">It&#39;s mara83o21.
+[[May I please have your full name?|Name]]
+[[What is the tracking number of your item?|Tracking]]
+[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="13" name="Tracking" tags="speaker-Ammar" position="875,925" size="100,100">It&#39;s mara83o21.
 
 [[It seems that the code is invalid.|InvalidCode]]</tw-passagedata><tw-passagedata pid="14" name="GreetFeedback" tags="" position="825,525" size="100,100">Careful. When a customer immediately explains their issue or appears agitated, it is best to validate their feelings, offer support, and emphasize urgency. 
 
@@ -211,21 +214,25 @@
 
 &lt;% story.showDelayed(&quot;ExcusesReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="17" name="ExcusesReaction" tags="speaker-Ammar" position="1200,625" size="100,100">It&#39;s not my fault that you&#39;re completely unprepared. Don&#39;t you guys have systems to deal with the peak call hours? It&#39;s literally the holiday season. 
 
-[[To speed up the resolution to your problem, let&#39;s open up your file.|Step 1]]</tw-passagedata><tw-passagedata pid="18" name="Step 2" tags="" position="1300,800" size="100,100">[[The delivery details indicate that the item was delivered one week late.|DeliveryDetails]]
+[[To speed up the resolution to your problem, let&#39;s open up your file.|Step 1]]</tw-passagedata><tw-passagedata pid="18" name="Step 2" tags="" position="1300,800" size="100,100">You should now have the client&#39;s file open to enter their complaint. Use the CRM&#39;s map feature to get further details on the client&#39;s issue.
+
+[[The delivery details indicate that the item was delivered one week late.|DeliveryDetails]]
 [[You mentioned that your package was delivered late and damaged. Can you give me more information?|DeliveryQuestions]]
 
 </tw-passagedata><tw-passagedata pid="19" name="InvalidCode" tags="" position="875,1050" size="100,100">[[FedPak tracking numbers end with 5 digits. Can you confirm the last 5 digits in your code?|NumberCode]]
 [[Please note that the tracking number with FedPak is different to your order number from the business you made your purchase from.|CodeFeedback]]
-[[Your FedPak tracking number can be found in your email.|EmailCode]]</tw-passagedata><tw-passagedata pid="20" name="EmailCode" tags="speaker-Ammar" position="875,1175" size="100,100">Okay I checked my email and it says M A R A 8 3 0 2 1. 
+[[Your FedPak tracking number can be found in your email.|EmailCode]]</tw-passagedata><tw-passagedata pid="20" name="EmailCode" tags="speaker-Ammar" position="875,1175" size="100,100">Okay, I checked my email and it says M A R A 8 3 0 2 1. 
 
-[[Perfect, thank you. |Step 1]]</tw-passagedata><tw-passagedata pid="21" name="CodeFeedback" tags="" position="1000,1175" size="100,100">Careful. When guiding the client, you want to give them actionable steps that they can take to provide you with the correct information, such as confirming the number, or checking their email.
+[[Perfect, thank you. |Step 1]]
+[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="21" name="CodeFeedback" tags="" position="1000,1175" size="100,100">Careful. When guiding the client, you want to give them actionable steps that they can take to provide you with the correct information, such as confirming the number, or checking their email.
 
-&lt;% story.showDelayed(&quot;CodeFeedback2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="22" name="NumberCode" tags="speaker-Ammar" position="750,1175" size="100,100">Oh sorry, I misread. Its mara83021. 
+&lt;% story.showDelayed(&quot;CodeFeedback2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="22" name="NumberCode" tags="speaker-Ammar" position="750,1175" size="100,100">Then I guess it&#39;s not an O. Mara83021. 
 
-[[No problem.|Step 1]]</tw-passagedata><tw-passagedata pid="23" name="CodeFeedback2" tags="speaker-Ammar" position="1000,1275" size="100,100">Yeah, I know. I gave you the right code.
+[[No problem.|Step 1]]
+[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="23" name="CodeFeedback2" tags="speaker-Ammar" position="1000,1275" size="100,100">Yeah, I know. I gave you the right code.
 
 [[Maybe we can try something else.|InvalidCode2]]</tw-passagedata><tw-passagedata pid="24" name="InvalidCode2" tags="" position="750,1050" size="100,100">[[FedPak tracking numbers end with 5 digits. Can you confirm the last 5 digits in your code?|NumberCode]]
-[[Your FedPak tracking number can be found in your email.|EmailCode]]</tw-passagedata><tw-passagedata pid="25" name="DeliveryDetails" tags="speaker-Ammar" position="1300,925" size="100,100">It&#39;s not just that it was delivered late, it was delivered completely in pieces as well. Your delivery driver must have smashed it against the wall or something. 
+[[Your FedPak tracking number can be found in your email.|EmailCode]]</tw-passagedata><tw-passagedata pid="25" name="DeliveryDetails" tags="speaker-Ammar" position="1300,925" size="100,100">It&#39;s not just that it was delivered late, it was delivered completely in pieces! Your delivery driver must have smashed it against the wall or something. 
 
 [[Let me see what caused this delay. Can you confirm the address the item was shipped to?|AddressFeedback]]
 [[Let me note in your file that the package was damaged. Can you describe the damage further?|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="26" name="DeliveryQuestions" tags="speaker-Ammar" position="1425,925" size="100,100">The glass was completely shattered, with the pieces going everywhere inside the PC. There were dents everywhere along the metal casing.
@@ -241,27 +248,29 @@
 
 &lt;% story.showDelayed(&quot;DeliveryQuestionsHub&quot;); %&gt;</tw-passagedata><tw-passagedata pid="29" name="DeliveryQuestionsHub" tags="" position="1450,1050" size="100,100">[[Was the packaging tampered with or opened when you received it?|DeliveryQuestion1]]
 [[Do you have photos of the damage that you can provide?|DeliveryQuestion2]]
-[[When did you notice the damage?| DeliveryQuestion3]]
-[[I have the information I need to proceed|Step 3]]</tw-passagedata><tw-passagedata pid="30" name="DeliveryQuestion1" tags="speaker-Ammar" position="1425,1200" size="100,100">No, the package was sealed normally. There was no reason to believe it would be in the state that it is.
+[[When did you notice the damage?| DeliveryQuestion3]]</tw-passagedata><tw-passagedata pid="30" name="DeliveryQuestion1" tags="speaker-Ammar" position="1425,1200" size="100,100">No, the package was sealed normally. There was no reason to believe it would be in the state that it is.
 
-[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="31" name="DeliveryQuestion2" tags="speaker-Ammar" position="1550,1200" size="100,100">Yeah, I do. 
+[[Thank you. I have another question|DeliveryQuestionsHub]]
+[[I have the information I need to proceed|Step 3]]</tw-passagedata><tw-passagedata pid="31" name="DeliveryQuestion2" tags="speaker-Ammar" position="1550,1200" size="100,100">Yeah, I do. 
 
 &lt;% story.showDelayed(&quot;DeliveryQuestionsPhoto&quot;); %&gt;
 </tw-passagedata><tw-passagedata pid="32" name=" DeliveryQuestion3" tags="speaker-Ammar" position="1675,1200" size="100,100">Well it was pretty obvious once I started to unwrap it that everything was broken.
 
-[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="33" name="DeliveryQuestionsPhoto" tags="speaker-Ammar" position="1550,1300" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
+[[Thank you. I have another question|DeliveryQuestionsHub]]
+[[I have the information I need to proceed|Step 3]]</tw-passagedata><tw-passagedata pid="33" name="DeliveryQuestionsPhoto" tags="speaker-Ammar" position="1550,1300" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
 
-[[Thank you for providing this image. It&#39;s a crucial step in finding a resolution for your issue, Ammar.|Step 3]]</tw-passagedata><tw-passagedata pid="34" name="Step 3" tags="" position="1700,1050" size="100,100">It is now time to document the solution for the client&#39;s complaint. 
+[[Thank you for providing this image. It&#39;s a crucial step in finding a resolution for your issue, Ammar.|Step 3]]
+[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="34" name="Step 3" tags="" position="1700,1050" size="100,100">It is now time to document the solution for the client&#39;s complaint. 
 
 [[I will transfer your issue to management, as they are the ones who deliberate on refund claims.|TransferFeedback]]
 [[I will issue a refund for your delivery right away.|Refund]]
-[[FedPak will change the address of delivery on file|Address]]
+[[FedPak will change the address of delivery on file.|Address]]
 
 </tw-passagedata><tw-passagedata pid="35" name="Address" tags="" position="1825,1300" size="100,100">Careful. The customer&#39;s complaint has nothing to do with an incorrect address.
 
 &lt;% story.showDelayed(&quot;AddressReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="36" name="TransferFeedback" tags="" position="1825,1175" size="100,100">Careful. If a customer is able to provide proof of damage, and that the damage was sustained during shipment, then FedPak policy requires a refund without escalating to management.
 
-&lt;% story.showDelayed(&quot;TransferReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Customers who can provide proof of damage should be refunded according to FedPak policy and standards. 
+&lt;% story.showDelayed(&quot;TransferReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Customers who can provide proof of damage should be refunded according to FedPak policy and standards. After logging the solution, we can now move to the follow-up.
 
 &lt;% story.showDelayed(&quot;Close&quot;); %&gt;
 
@@ -273,19 +282,22 @@
 
 [[Thank you for sharing this. I will issue a refund for your delivery right away.|Refund]]</tw-passagedata><tw-passagedata pid="41" name="AddressReaction" tags="speaker-Ammar" position="1950,1300" size="100,100">This is such a waste of time. I HAVE A DAMAGED PACKAGE NOT AN INCORRECT ADDRESS. 
 
-[[FedPak policy requires proof of damage, and that the damage was sustained during shipment. Do you have proof that you can share with me?|Address2]]</tw-passagedata><tw-passagedata pid="42" name="Address2" tags="speaker-Ammar" position="2050,1300" size="100,100">YES.
+[[FedPak policy requires proof of damage, and that the damage was sustained during shipment. Do you have proof that you can share with me?|Address2]]</tw-passagedata><tw-passagedata pid="42" name="Address2" tags="speaker-Ammar" position="2050,1300" size="100,100">YES, AND AS YOU CAN SEE IT&#39;S STILL IN THE PACKAGING. 
 
 &lt;% story.showDelayed(&quot;Address3&quot;); %&gt;
 
 [[Address3]]</tw-passagedata><tw-passagedata pid="43" name="Address3" tags="speaker-Ammar" position="2150,1300" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
 
-[[Thank you for sharing this. I will issue a refund for your delivery right away.|RefundAngry]]</tw-passagedata><tw-passagedata pid="44" name="RefundAngry" tags="speaker-Ammar" position="2150,1425" size="100,100">If this is the level of competency I&#39;m to expect from FedPak it&#39;s no wonder my package came in pieces.
+[[Thank you for sharing this. I will issue a refund for your delivery right away.|RefundAngry]]</tw-passagedata><tw-passagedata pid="44" name="RefundAngry" tags="speaker-Ammar" position="2150,1425" size="100,100">If this is the level of competency I&#39;m to expect from FedPak it&#39;s no wonder my package came like this
 
 &lt;% story.showDelayed(&quot;Refund&quot;); %&gt;</tw-passagedata><tw-passagedata pid="45" name="Close" tags="" position="1825,1550" size="100,100">[[I have logged the solution to your issue, Ammar. You should be receiving your refund in your account within the next few days.|Close2]]
-[[Thank you for your patience, Ammar. You will be issued your refund within the next 2-3 business days.|Close2]]</tw-passagedata><tw-passagedata pid="46" name="Close2" tags="" position="1825,1675" size="100,100">[[Is there anything else that I can do for you today?|Close3]]</tw-passagedata><tw-passagedata pid="47" name="Close3" tags="speaker-Ammar" position="1825,1800" size="100,100">No. That&#39;ll be all.
+[[Thank you for your patience, Ammar. You will be issued your refund within the next 2-3 business days.|Close2]]</tw-passagedata><tw-passagedata pid="46" name="Close2" tags="" position="1825,1675" size="100,100">[[Is there anything else that I can do for you today?|Close3]]</tw-passagedata><tw-passagedata pid="47" name="Close3" tags="speaker-Ammar" position="1825,1800" size="100,100">What do I do if I don&#39;t receive a refund?
 
-[[Great. Thank you for reaching out to us. You will receive a follow-up in the coming days to ensure that we have resolved this issue to your satisfaction.|Step 4]]
-[[Great. We will reach out to you again shortly to ensure your satisfaction with our service.|Step 4]]</tw-passagedata><tw-passagedata pid="48" name="Step 4" tags="" position="1975,1800" size="100,100">Ammar has disconnected from the chat. </tw-passagedata></tw-storydata>
+[[Don&#39;t worry. You will receive a follow-up in the coming days to ensure that we have resolved this issue to your satisfaction.|FollowUpReaction]]</tw-passagedata><tw-passagedata pid="48" name="Step 4" tags="" position="1975,1800" size="100,100">Ammar has disconnected from the chat. </tw-passagedata><tw-passagedata pid="49" name="FollowUpReaction" tags="speaker-Ammar" position="1825,1925" size="100,100">So I need to wait around?
+
+[[Yes! If you haven&#39;t received your refund by then, we will certainly escalate it to ensure you get your money back.|FUReaction1]]</tw-passagedata><tw-passagedata pid="50" name="FUReaction1" tags="speaker-Ammar" position="1825,2050" size="100,100">Fine. Thanks for your help.
+
+&lt;% story.showDelayed(&quot;Step 4&quot;); %&gt;</tw-passagedata></tw-storydata>
 
     <!-- Modal -->
     <div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="exitModalLabel" aria-hidden="true">

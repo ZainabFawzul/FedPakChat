@@ -97,6 +97,8 @@
 .user-response-panel { /*changes the bottom response panel to lavendar*/
   background-color: #E9E9F7;
   border-top: 5px solid #E9E9F7;
+  max-width: 100%;
+  margin: 0 auto;
   
 }
 
@@ -117,14 +119,14 @@
 .user-reponse-wrapper {
   height: min-content;
   display: contents;
-  align-items: flex-start;
+  align-items: center;
   animation: delayFlexStart 3s forwards; /* 3-second delay */
   justify-content: center;
 }
 
 .body {
   padding-top: var(--navbar-height);
-  margin-bottom: none;
+  margin-bottom: unset;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { /*changes the title of the entire chat*/

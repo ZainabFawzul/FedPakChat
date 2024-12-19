@@ -113,17 +113,20 @@
   
 }
 
-
-
 /*TESTESESTETSTSTTSTSTSTSTSTTSS*/
 
 /* change user response bubbles to make sure they fit in storyline */
 .user-reponse-wrapper {
   height: min-content;
-  display: flex;
-  align-items: flex-start;
+  display: contents;
+  align-items: center;
   animation: delayFlexStart 3s forwards; /* 3-second delay */
   justify-content: center;
+}
+
+.body {
+  padding-top: var(--navbar-height);
+  margin-bottom: unset;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { /*changes the title of the entire chat*/
@@ -158,7 +161,9 @@
   visibility: hidden;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-Ammar" color="green"></tw-tag><tw-tag name="speaker-You" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="575,400" size="100,100">Ammar has connected to the chat. 
+.fixed-bottom {
+  position: inherit;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-Ammar" color="green"></tw-tag><tw-tag name="speaker-You" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="575,400" size="100,100">Ammar has connected to the chat. 
 
 &lt;% story.showDelayed(&quot;A1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="2" name="A1" tags="speaker-Ammar" position="700,400" size="100,100">Hi.
 

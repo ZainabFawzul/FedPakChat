@@ -71,14 +71,15 @@
     </main>
 
     <tw-storydata name="FedPak Support Chat" startnode="1" creator="Twine" creator-version="2.10.0" format="Trialogue" format-version="0.1.1" ifid="4182E158-29D7-4845-B8B4-AF6015F9DF9D" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">:root {
-    --bg-color: #FFF; /*changes the entire chat bg to white*/
-    --user-color: #494CCC; /*changes the FedPakk agent's name and icon to purple*/
-    --speaker-color: #8C8ED6; /*changes the customer's name and icon to lighter purple*/
-    --sidebar-bg-color: #E9E9F7;
-    --navbar-bg-color: #E9E9F7;
-    --passage-bg-color: #E9E9F7; /*changes the chat bubbles to lavendar*/
-    --passage-text-color: #000; /*changes the chat bubble text to black*/
+	--bg-color: #FFF; /*changes the entire chat bg to white*/
+	--user-color: #494CCC; /*changes the FedPakk agent's name and icon to purple*/
+	--speaker-color: #8C8ED6; /*changes the customer's name and icon to lighter purple*/
+	--sidebar-bg-color: #E9E9F7;
+	--navbar-bg-color: #E9E9F7;
+	--passage-bg-color: #E9E9F7; /*changes the chat bubbles to lavendar*/
+	--passage-text-color: #000; /*changes the chat bubble text to black*/
 }
+
 
 .chat-passage { /*adds a rounded corner along all chat bubbles*/
 	border: 1px solid #FFF;
@@ -88,40 +89,16 @@
 .user-response { /*adds a rounded corner along the user response bubbles*/
 	border: 1px solid #FFF;
 	border-radius: 0.5rem;
-    border-top: 1px solid transparent;
-      border-top-width: 1px;
-      border-top-style: solid;
-      border-top-color: #494CCC;
-}
-
-.user-response-panel { /*changes the bottom response panel to lavendar*/
-  background-color: #E9E9F7;
-  border-top: 5px solid #E9E9F7;
-  max-width: 100%;
-  margin: 0 auto;
-  
-}
-
-.user-response-panel hr {
-  margin: 0;
-  border-top: 5px solid #E9E9F7;
+	border-top: 1px solid transparent;
+  	border-top-width: 1px;
+  	border-top-style: solid;
+  	border-top-color: #494CCC;
 }
 
 .user-response-panel .user-response { /*changes the bg colour and text of the response chat bubbles*/
-  background-color: #fff;
-  color: #000;
-  
-}
-
-/*TESTESESTETSTSTTSTSTSTSTSTTSS*/
-
-/* change user response bubbles to make sure they fit in storyline */
-.user-reponse-wrapper {
-  height: min-content;
-  display: contents;
-  align-items: center;
-  animation: delayFlexStart 3s forwards; /* 3-second delay */
-  justify-content: center;
+  background-color: #31338B;
+  color: #FFF;
+ 
 }
 
 .body {
@@ -129,41 +106,11 @@
   margin-bottom: unset;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { /*changes the title of the entire chat*/
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #202366;
-  
-}  
-
-.chat-passage-wrapper[data-speaker='Ammar']:before {
-  background-image: url('https://placekitten.com/100/100');
-
-}
-.chat-passage-wrapper[data-speaker='Ammar'] .chat-passage::before {
-  color: #31338B;
-}
-
-.chat-passage-wrapper[data-speaker='you']:after {
-  background-image: url('https://placekitten.com/100/100');
-}
-.chat-passage-wrapper[data-speaker='you'] .chat-passage::before {
-  color: #31338B;
-}
-
 /* Navbar */
 .navbar {
   visibility: hidden;
 }
-
-.nav.navbar.navbar-expand-lg.fixed-top nav-link-undo.content-container {
-  visibility: hidden;
-}
-
-.fixed-bottom {
-  position: inherit;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-Ammar" color="green"></tw-tag><tw-tag name="speaker-You" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="575,400" size="100,100">Ammar has connected to the chat. 
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="speaker-Ammar" color="green"></tw-tag><tw-tag name="speaker-You" color="purple"></tw-tag><tw-passagedata pid="1" name="Start" tags="" position="575,400" size="100,100">Ammar has connected to the chat. 
 
 &lt;% story.showDelayed(&quot;A1&quot;); %&gt;</tw-passagedata><tw-passagedata pid="2" name="A1" tags="speaker-Ammar" position="700,400" size="100,100">Hi.
 
@@ -188,9 +135,7 @@
 [[I apologize for the inconvenience, Ammar. Unfortunately I can&#39;t access your records with us until I have your full name, number, and tracking number.|Step 1]]</tw-passagedata><tw-passagedata pid="8" name="Step 1" tags="" position="1000,800" size="100,100">[[May I please have your full name?|Name]]
 [[Can I get the number we have on file?|Number]]
 [[What is the tracking number of your item?|Tracking]]
-
-
-[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="9" name="EmpathyFeedback" tags="" position="700,625" size="100,100">Careful. When trying to be empathetic, we want to ensure that our responses are useful and targeted at the client&#39;s immediate problem. 
+</tw-passagedata><tw-passagedata pid="9" name="EmpathyFeedback" tags="" position="700,625" size="100,100">Careful. When trying to be empathetic, we want to ensure that our responses are useful and targeted at the client&#39;s immediate problem. 
 
 &lt;% story.showDelayed(&quot;EmpathyReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="10" name="EmpathyReaction" tags="speaker-Ammar" position="700,725" size="100,100">What is this, a therapy session?
 
@@ -203,7 +148,7 @@
 
 [[May I please have your full name?|Name]]
 [[What is the tracking number of your item?|Tracking]]
-[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="13" name="Tracking" tags="speaker-Ammar" position="875,925" size="100,100">It&#39;s mara83o21.
+[[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="13" name="Tracking" tags="speaker-Ammar" position="875,925" size="100,100">It&#39;s MARA83O21.
 
 [[It seems that the code is invalid.|InvalidCode]]</tw-passagedata><tw-passagedata pid="14" name="GreetFeedback" tags="" position="825,525" size="100,100">Careful. When a customer immediately explains their issue or appears agitated, it is best to validate their feelings, offer support, and emphasize urgency. 
 
@@ -218,6 +163,7 @@
 
 [[The delivery details indicate that the item was delivered one week late.|DeliveryDetails]]
 [[You mentioned that your package was delivered late and damaged. Can you give me more information?|DeliveryQuestions]]
+[[Hold on, I&#39;m missing some information to access your file.|Step 1]]
 
 </tw-passagedata><tw-passagedata pid="19" name="InvalidCode" tags="" position="875,1050" size="100,100">[[FedPak tracking numbers end with 5 digits. Can you confirm the last 5 digits in your code?|NumberCode]]
 [[Please note that the tracking number with FedPak is different to your order number from the business you made your purchase from.|CodeFeedback]]
@@ -226,7 +172,7 @@
 [[Perfect, thank you. |Step 1]]
 [[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="21" name="CodeFeedback" tags="" position="1000,1175" size="100,100">Careful. When guiding the client, you want to give them actionable steps that they can take to provide you with the correct information, such as confirming the number, or checking their email.
 
-&lt;% story.showDelayed(&quot;CodeFeedback2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="22" name="NumberCode" tags="speaker-Ammar" position="750,1175" size="100,100">Then I guess it&#39;s not an O. Mara83021. 
+&lt;% story.showDelayed(&quot;CodeFeedback2&quot;); %&gt;</tw-passagedata><tw-passagedata pid="22" name="NumberCode" tags="speaker-Ammar" position="750,1175" size="100,100">Then I guess it&#39;s not an O. MARA83021. 
 
 [[No problem.|Step 1]]
 [[I have everything I need to access your file.|Step 2]]</tw-passagedata><tw-passagedata pid="23" name="CodeFeedback2" tags="speaker-Ammar" position="1000,1275" size="100,100">Yeah, I know. I gave you the right code.
@@ -260,7 +206,7 @@
 [[I have the information I need to proceed|Step 3]]</tw-passagedata><tw-passagedata pid="33" name="DeliveryQuestionsPhoto" tags="speaker-Ammar" position="1550,1300" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
 
 [[Thank you for providing this image. It&#39;s a crucial step in finding a resolution for your issue, Ammar.|Step 3]]
-[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="34" name="Step 3" tags="" position="1700,1050" size="100,100">It is now time to document the solution for the client&#39;s complaint. 
+[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="34" name="Step 3" tags="" position="1700,1050" size="100,100">You should now have entered the complaint. Next, it&#39;s time to document the solution in Step 3. 
 
 [[I will transfer your issue to management, as they are the ones who deliberate on refund claims.|TransferFeedback]]
 [[I will issue a refund for your delivery right away.|Refund]]
@@ -272,9 +218,7 @@
 
 &lt;% story.showDelayed(&quot;TransferReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Customers who can provide proof of damage should be refunded according to FedPak policy and standards. After logging the solution, we can now move to the follow-up.
 
-&lt;% story.showDelayed(&quot;Close&quot;); %&gt;
-
-[[Close]]</tw-passagedata><tw-passagedata pid="38" name="TransferReaction" tags="speaker-Ammar" position="1950,1175" size="100,100">Are you being serious? I&#39;m being bounced around again? 
+&lt;% story.showDelayed(&quot;Close&quot;); %&gt;</tw-passagedata><tw-passagedata pid="38" name="TransferReaction" tags="speaker-Ammar" position="1950,1175" size="100,100">Are you being serious? I&#39;m being bounced around again? 
 
 [[FedPak policy requires proof of damage, and that the damage was sustained during shipment. Do you have proof that you can share with me?|Transfer]]</tw-passagedata><tw-passagedata pid="39" name="Transfer" tags="speaker-Ammar" position="2050,1175" size="100,100">Yeah, I do. As you can see, it&#39;s still in the packaging.
 
@@ -295,7 +239,7 @@
 
 [[Don&#39;t worry. You will receive a follow-up in the coming days to ensure that we have resolved this issue to your satisfaction.|FollowUpReaction]]</tw-passagedata><tw-passagedata pid="48" name="Step 4" tags="" position="1975,1800" size="100,100">Ammar has disconnected from the chat. </tw-passagedata><tw-passagedata pid="49" name="FollowUpReaction" tags="speaker-Ammar" position="1825,1925" size="100,100">So I need to wait around?
 
-[[Yes! If you haven&#39;t received your refund by then, we will certainly escalate it to ensure you get your money back.|FUReaction1]]</tw-passagedata><tw-passagedata pid="50" name="FUReaction1" tags="speaker-Ammar" position="1825,2050" size="100,100">Fine. Thanks for your help.
+[[If you haven&#39;t received your refund by then, we will certainly escalate it to ensure you get your money back.|FUReaction1]]</tw-passagedata><tw-passagedata pid="50" name="FUReaction1" tags="speaker-Ammar" position="1825,2050" size="100,100">Fine. Thanks for your help.
 
 &lt;% story.showDelayed(&quot;Step 4&quot;); %&gt;</tw-passagedata></tw-storydata>
 

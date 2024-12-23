@@ -172,7 +172,7 @@
 
 &lt;% story.showDelayed(&quot;ExcusesReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="17" name="ExcusesReaction" tags="speaker-Ammar" position="1200,625" size="100,100">It&#39;s not my fault that you&#39;re completely unprepared. Don&#39;t you guys have systems to deal with the peak call hours? It&#39;s literally the holiday season. 
 
-[[To speed up the resolution to your problem, let&#39;s open up your file.|Step 1]]</tw-passagedata><tw-passagedata pid="18" name="Step 2" tags="" position="1300,800" size="100,100">You should now have the client&#39;s file open to enter their complaint. Use the CRM&#39;s map feature to get further details on the client&#39;s issue.
+[[To speed up the resolution to your problem, let&#39;s open up your file.|Step 1]]</tw-passagedata><tw-passagedata pid="18" name="Step 2" tags="" position="1300,800" size="100,100">You should now have the client&#39;s file open to enter their complaint in STEP 2. Use the CRM&#39;s map feature to get further details on the client&#39;s issue.
 
 [[The delivery details indicate that the item was delivered one week late.|DeliveryDetails]]
 [[You mentioned that your package was delivered late and damaged. Can you give me more information?|DeliveryQuestions]]
@@ -219,7 +219,7 @@
 [[I have the information I need to proceed|Step 3]]</tw-passagedata><tw-passagedata pid="33" name="DeliveryQuestionsPhoto" tags="speaker-Ammar" position="1550,1300" size="100,100">![Damaged PC](https://i.ibb.co/3RkLvsK/Screenshot-2024-12-16-221654.png &quot;Broken PC&quot;)
 
 [[Thank you for providing this image. It&#39;s a crucial step in finding a resolution for your issue, Ammar.|Step 3]]
-[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="34" name="Step 3" tags="" position="1700,1050" size="100,100">You should now have entered the complaint. Next, it&#39;s time to document the solution in Step 3. 
+[[Thank you. I have another question|DeliveryQuestionsHub]]</tw-passagedata><tw-passagedata pid="34" name="Step 3" tags="" position="1700,1050" size="100,100">You should now have entered the complaint. Next, it&#39;s time to document the solution in STEP  3: Solution. 
 
 [[I will transfer your issue to management, as they are the ones who deliberate on refund claims.|TransferFeedback]]
 [[I will issue a refund for your delivery right away.|Refund]]
@@ -229,7 +229,7 @@
 
 &lt;% story.showDelayed(&quot;AddressReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="36" name="TransferFeedback" tags="" position="1825,1175" size="100,100">Careful. If a customer is able to provide proof of damage, and that the damage was sustained during shipment, then FedPak policy requires a refund without escalating to management.
 
-&lt;% story.showDelayed(&quot;TransferReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Customers who can provide proof of damage should be refunded according to FedPak policy and standards. After logging the solution, we can now move to the follow-up.
+&lt;% story.showDelayed(&quot;TransferReaction&quot;); %&gt;</tw-passagedata><tw-passagedata pid="37" name="Refund" tags="" position="1825,1425" size="100,100">Customers who can provide proof of damage should be refunded according to FedPak policy and standards. After logging the solution, we can now move to STEP 4: Follow-up.
 
 &lt;% story.showDelayed(&quot;Close&quot;); %&gt;</tw-passagedata><tw-passagedata pid="38" name="TransferReaction" tags="speaker-Ammar" position="1950,1175" size="100,100">Are you being serious? I&#39;m being bounced around again? 
 
@@ -247,14 +247,15 @@
 
 [[Thank you for sharing this. I will issue a refund for your delivery right away.|RefundAngry]]</tw-passagedata><tw-passagedata pid="44" name="RefundAngry" tags="speaker-Ammar" position="2150,1425" size="100,100">If this is the level of competency I&#39;m to expect from FedPak it&#39;s no wonder my package came like this
 
-&lt;% story.showDelayed(&quot;Refund&quot;); %&gt;</tw-passagedata><tw-passagedata pid="45" name="Close" tags="" position="1825,1550" size="100,100">[[I have logged the solution to your issue, Ammar. You should be receiving your refund in your account within the next few days.|Close2]]
-[[Thank you for your patience, Ammar. You will be issued your refund within the next 2-3 business days.|Close2]]</tw-passagedata><tw-passagedata pid="46" name="Close2" tags="" position="1825,1675" size="100,100">[[Is there anything else that I can do for you today?|Close3]]</tw-passagedata><tw-passagedata pid="47" name="Close3" tags="speaker-Ammar" position="1825,1800" size="100,100">What do I do if I don&#39;t receive a refund?
+&lt;% story.showDelayed(&quot;Refund&quot;); %&gt;</tw-passagedata><tw-passagedata pid="45" name="Close" tags="" position="1825,1550" size="100,100">[[I have logged the solution to your issue, Ammar. You should be receiving your refund in your account within the next few days.|Step 4]]
+[[Thank you for your patience, Ammar. You will be issued your refund within the next 2-3 business days.|Step 4]]</tw-passagedata><tw-passagedata pid="46" name="Step 4" tags="" position="1825,1675" size="100,100">[[How would you like to receive your follow-up from us: email, text, or call?|MediumChoice]]
+[[Is there anything else that I can do for you today?|Close3]]</tw-passagedata><tw-passagedata pid="47" name="Close3" tags="speaker-Ammar" position="1825,1800" size="100,100">What do I do if I don&#39;t receive a refund?
 
-[[Don&#39;t worry. You will receive a follow-up in the coming days to ensure that we have resolved this issue to your satisfaction.|FollowUpReaction]]</tw-passagedata><tw-passagedata pid="48" name="Step 4" tags="" position="1975,1800" size="100,100">Ammar has disconnected from the chat. </tw-passagedata><tw-passagedata pid="49" name="FollowUpReaction" tags="speaker-Ammar" position="1825,1925" size="100,100">So I need to wait around?
+[[You will receive a follow-up in the next week to ensure that we have resolved this issue to your satisfaction.|FollowUpReaction]]</tw-passagedata><tw-passagedata pid="48" name="Disconnect" tags="" position="1975,1800" size="100,100">Ammar has disconnected from the chat. </tw-passagedata><tw-passagedata pid="49" name="FollowUpReaction" tags="speaker-Ammar" position="1825,1925" size="100,100">Fine, thanks for your help.
 
-[[If you haven&#39;t received your refund by then, we will certainly escalate it to ensure you get your money back.|FUReaction1]]</tw-passagedata><tw-passagedata pid="50" name="FUReaction1" tags="speaker-Ammar" position="1825,2050" size="100,100">Fine. Thanks for your help.
+[[No problem. Thank you for reaching out to us today. We hope we&#39;ve resolved your issue to your satisfaction. Have a great day, Ammar! |Disconnect]]</tw-passagedata><tw-passagedata pid="50" name="MediumChoice" tags="speaker-Ammar" position="1700,1800" size="100,100">I&#39;d prefer text.
 
-&lt;% story.showDelayed(&quot;Step 4&quot;); %&gt;</tw-passagedata></tw-storydata>
+&lt;% story.showDelayed(&quot;Close3&quot;); %&gt;</tw-passagedata></tw-storydata>
 
     <!-- Modal -->
     <div class="modal fade" id="exitModal" tabindex="-1" role="dialog" aria-labelledby="exitModalLabel" aria-hidden="true">
